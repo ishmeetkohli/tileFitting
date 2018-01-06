@@ -16,6 +16,7 @@
 Debug
 Release
 x64
+.vs
 *.suo
 *.sln
 *.csproj.user
