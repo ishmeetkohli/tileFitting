@@ -1,26 +1,24 @@
-//
-//  Rect.hpp
+//  
+//  rect.hpp
 //  TileFitting
 //
-//  Created by Ishmeet Singh Kohli on 22/12/17.
-//  Copyright © 2017 Ishmeet. All rights reserved.
+//  Created by Ishmeet Singh Kohli
 //
 
-#ifndef Rect_hpp
-#define Rect_hpp
+#ifndef rect_hpp
+#define rect_hpp
 
-#include <stdio.h>
 #include <algorithm>
 
 struct Rect {
-    int seqId;
-    int width;
-    int height;
-    int area;
-    
-    Rect(int seqId, int width, int height);
-    bool isGreaterThan(Rect rect);
+	int seqId;
+	int width;
+	int height;
+	int area;
+
+	Rect(int seqId, int width, int height);
+	bool isGreaterThan(Rect rect);
 };
 
 
-#endif /* Rect_hpp */
+#endif /* rect_hpp */

@@ -2,8 +2,7 @@
 //  pipeline.hpp
 //  TileFitting
 //
-//  Created by Ishmeet Singh Kohli on 16/12/17.
-//  Copyright © 2017 Ishmeet. All rights reserved.
+//  Created by Ishmeet Singh Kohli
 //
 
 #ifndef pipeline_hpp
@@ -16,33 +15,17 @@
 #include <map>
 
 #include "csv_parser.hpp"
-#include "Tree.hpp"
-#include "Result.hpp"
-
-struct RectNode{
-    int width;
-    int height;
-    int x;
-    int y;
-    
-    bool used;
-    int minAllowance;
-    
-    RectNode *left, *right;
-    RectNode(int width, int height);
-    
-    void split(int width, int height);
-};
-
+#include "rect_node.hpp"
+#include "result.hpp"
 
 class Pipeline {
 private:
-    RectNode root;
+	RectNode root;
+	CsvParser parser;
     
 public:
     Pipeline(int width, int height);
     
-    CsvParser parser;
     map<int, Result> fitRectangles(vector<Rect> rectangles);
     RectNode* findBestFit(RectNode *root, Rect *rect);
     bool fit(string inputFileName, string outputFileName);

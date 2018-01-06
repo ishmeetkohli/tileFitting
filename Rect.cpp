@@ -1,14 +1,11 @@
 //
-//  Rect.cpp
+//  rect.cpp
 //  TileFitting
 //
-//  Created by Ishmeet Singh Kohli on 22/12/17.
-//  Copyright © 2017 Ishmeet. All rights reserved.
+//  Created by Ishmeet Singh Kohli
 //
 
-#include "Rect.hpp"
-
-using namespace std;
+#include "rect.hpp"
 
 Rect::Rect(int seqId, int width, int height) {
     this->seqId = seqId;

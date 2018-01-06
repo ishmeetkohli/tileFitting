@@ -1,12 +1,11 @@
 //
-//  Result.cpp
+//  result.cpp
 //  TileFitting
 //
-//  Created by Ishmeet Singh Kohli on 28/12/17.
-//  Copyright © 2017 Ishmeet. All rights reserved.
+//  Created by Ishmeet Singh Kohli
 //
 
-#include "Result.hpp"
+#include "result.hpp"
 
 Result::Result(int width, int height, int top, int left)
 {

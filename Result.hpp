@@ -1,15 +1,12 @@
 //
-//  Result.hpp
+//  result.hpp
 //  TileFitting
 //
-//  Created by Ishmeet Singh Kohli on 28/12/17.
-//  Copyright © 2017 Ishmeet. All rights reserved.
+//  Created by Ishmeet Singh Kohli
 //
 
-#ifndef Result_hpp
-#define Result_hpp
-
-#include <stdio.h>
+#ifndef result_hpp
+#define result_hpp
 
 struct Result
 {
@@ -18,8 +15,7 @@ struct Result
     int top;
     int left;
 
-    Result(int width, int height, int top, int left);
-    
+    Result(int width, int height, int top, int left);  
 };
 
-#endif /* Result_hpp */
+#endif /* result_hpp */
